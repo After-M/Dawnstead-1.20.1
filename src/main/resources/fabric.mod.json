@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dawnstead",
+	"version": "${version}",
+	"name": "Dawnstead",
+	"description": "想做一个能玩的下去的模组",
+	"authors": [
+		"今天是AfterEHC0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dawnstead/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.afterech0.dawnstead.Dawnstead"
+		],
+		"fabric-datagen": [
+			"com.afterech0.dawnstead.DawnsteadDataGenerator"
+		],
+		"client": [
+			"com.afterech0.dawnstead.DawnsteadClient"
+		]
+	},
+	"mixins": [
+		"dawnstead.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
